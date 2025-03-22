@@ -5,38 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Die Wilden Jeeßböck - Fanclub</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #d42f2f;
+            background: linear-gradient(45deg, #d42f2f, #ff4c4c);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
         }
         main {
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #d42f2f;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .content {
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #d42f2f;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            list-style-type: none;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul li::before {
+            content: "🔥";
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #d42f2f;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4c4c;
         }
         footer {
             background-color: #333;
             color: white;
+            padding: 15px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            position: relative;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #d42f2f;
+        }
+        .websites {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .websites h3 {
+            color: #d42f2f;
+            margin-bottom: 20px;
+        }
+        .websites ul {
+            list-style-type: none;
+        }
+        .websites ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -61,12 +143,28 @@
         
         <h3>Werde Teil unserer Gemeinschaft!</h3>
         <p>Sei wild genug für die Jeeßböck und erlebe mit uns die pure Fan-Emotion!</p>
+        <a href="#" class="btn">Jetzt Mitglied werden!</a>
+    </div>
+
+    <div class="websites">
+        <h3>Weitere coole Websites:</h3>
+        <ul>
+            <li><a href="https://www.fc-koeln.de" target="_blank">1. FC Köln Offizielle Website</a></li>
+            <li><a href="https://www.bundesliga.com" target="_blank">Bundesliga - Die offizielle Seite</a></li>
+            <li><a href="https://www.uefa.com" target="_blank">UEFA - Champions League</a></li>
+        </ul>
     </div>
 </main>
 
 <footer>
     <p>&copy; 2025 Die Wilden Jeeßböck. Alle Rechte vorbehalten.</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
 </footer>
 
 </body>
 </html>
+
